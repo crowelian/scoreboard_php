@@ -14,6 +14,8 @@ include("include/session.php");
 <script src="assets/js/mobile-detect.js"></script>
 <script src="assets/js/notification.js"></script>
 
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:wght@300&display=swap" rel="stylesheet">
 
 <!-- CSS -->
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
