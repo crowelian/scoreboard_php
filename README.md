@@ -24,9 +24,17 @@ The page is using Bootstrap 4 as a base, also using custom Javascript and JQuery
 
 
 
-Visit my sites:
----------------
+Visit my sites
+--------------
 
 [My homepage including photography](https://www.harriahola.com "Harri Ahola")
 
 [My other site for testing programming stuff](https://softa.site "Softa.site")
+
+
+Acknowledgments
+---------------
+
+- [Theme base is bootswatch: Slate](https://bootswatch.com/ "Bootswatch")
+
+
