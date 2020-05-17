@@ -14,6 +14,7 @@ Show game scoreboard with orderable score column.
 
 
 Visit my sites:
+
 [My homepage including photography](https://www.harriahola.com "Harri Ahola")
 
 [My other site for testing programming stuff](https://softa.site "Softa.site")
