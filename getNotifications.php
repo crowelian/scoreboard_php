@@ -17,7 +17,7 @@ include("config/db.php");
     }
     
 
-    $query = "SELECT * FROM highscores ORDER BY score DESC LIMIT 99";
+    $query = "SELECT * FROM highscores ORDER BY id DESC LIMIT 3";
     $result = mysqli_query($dbCon, $query);
     $output = '';
 
@@ -28,13 +28,13 @@ include("config/db.php");
         //$output .= "{ 'data': [";
 
             
-
+            $output .= '<span class="s-span">Latest Players:</span><br>';
         while($row = mysqli_fetch_array($result))
         {
 
             $output .= '
   
-            <button class="btn btn-dark" onClick="reloadTable" class="dropdown-item">
+            <button class="btn btn-dark" style="width: 100%;" onClick="reloadTable" class="dropdown-item">
             <strong>'.$row["user"].'</strong><br />
             <small><em>'.$row["score"].'</em></small>
             </button>

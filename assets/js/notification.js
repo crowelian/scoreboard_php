@@ -11,6 +11,18 @@ cError = [
     'text-align: center',
     'font-weight: bold'
 ].join(';');
+cSuccess = [
+    'background: #32a852',
+    'border: 1px solid #3E0E02',
+    'color: white',
+    'display: block',
+    'text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3)',
+    'box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4) inset, 0 5px 3px -5px rgba(0, 0, 0, 0.5), 0 -13px 5px -10px rgba(255, 255, 255, 0.4) inset',
+    'line-height: 20px',
+    'text-align: center',
+    'font-weight: bold'
+].join(';');
+
 let newData = "";
 
 
@@ -70,10 +82,26 @@ $(document).ready(function () {
 });
 
 
-
-function reloadTable() {
-    console.log("%c DEBUG", cError);
+function showNotification(msg, type) {
+    if (type == "alert-danger"){
+        if ($("#n-msg").hasClass("alert-danger")) {
+            $("#n-msg").removeClass("alert-success");
+        } else {
+            $("#n-msg").removeClass("alert-success");
+            $("#n-msg").addClass("alert-danger");
+        }
+        
+    } else {
+        if ($("#n-msg").hasClass("alert-success")) {
+            $("#n-msg").removeClass("alert-success");
+        } else {
+            $("#n-msg").removeClass("alert-danger");
+            $("#n-msg").addClass("alert-success");
+        }
+        
+    }
+    $("#n-msg").html(msg);
+    $("#notify").show("slow");
+    setTimeout(function() { $("#notify").hide("slow"); }, 5000);
 }
-
-
-
+$("#notify").hide();

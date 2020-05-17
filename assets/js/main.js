@@ -30,6 +30,10 @@ $(document).ready(function () {
     $('.dataTables_length').addClass('bs-select');
 });
 
+function reloadTable() {
+    table.ajax.reload();
+    console.log("%c Scoreboard refreshed!", cSuccess);
+}
 
 $(document).ready(function () {
     // Ajax for handling new player score sending
@@ -51,7 +55,14 @@ $(document).ready(function () {
                     if ($.fn.load_unseen_notification) {
                         load_unseen_notification();
                     }
-                    console.log("SENT");
+                    if (data === "Playername already exists!") {
+                        console.log("%c Playername already taken!", cError);
+                        showNotification("The name is already taken!", "alert-danger");
+                    } else if (data === "Player highscore added!") {
+                        console.log("%c New score added!", cSuccess);
+                        showNotification("New player score added!", "alert-success");
+                        reloadTable();
+                    }
 
                 },
                 error: function(xhr, ajaxOptions, thrownError){
@@ -66,4 +77,7 @@ $(document).ready(function () {
         }
 
     });
+
+    
 });
+

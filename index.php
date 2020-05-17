@@ -13,9 +13,9 @@ include("includes/header.php");
 
             <div id="scoreNotifications" class="dropdown float-right">
                 <a href="#" class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <span class="badge badge-danger count" style="border-radius:10px;"></span><i class="fas fa-bell"></i>
+                    <span class="badge badge-danger count" style="border-radius:10px;"></span><i class="fa fa-bell"></i>
                 </a>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="left: -256px;">
+                <div class="dropdown-menu text-center" aria-labelledby="dropdownMenuButton" style="left: -256px;">
                 <div class="dropdown-header">Latest players:</div> 
                     <!-- notifications here -->
                 </div>
@@ -68,6 +68,10 @@ include("includes/header.php");
     </div>
 </div>
 
+<div id="notify" class="row">
+    <div id="n-msg" class="col-md-12 alert "></div>
+</div>
+
 <div id="submitNewPlayer" class="col card">
     <form method="post" id="playerScore_form">
     <div class="form-group">
@@ -79,7 +83,7 @@ include("includes/header.php");
         <label for="inputScore">Score</label>
         <input type="text" name="inputScore" class="form-control" id="inputScore" placeholder="Player score">
     </div>
-    <button type="submit" class="btn btn-primary">Add a new score</button>
+    <button type="submit" class="btn btn-outline-success btn-block"><i class="fa fa-plus"></i> Add a new score <i class="fa fa-plus"></i></button>
     </form>
 </div>
 
