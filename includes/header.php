@@ -1,5 +1,6 @@
-<?php 
-include("include/session.php");
+<?php
+include("php_errors.php");
+include("session.php");
 ?>
 
 <head>
@@ -8,11 +9,11 @@ include("include/session.php");
 
 <!-- JS -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.js"></script>
 <script src="assets/js/mobile-detect.js"></script>
-<script src="assets/js/notification.js"></script>
 
 <!-- Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:wght@300&display=swap" rel="stylesheet">
