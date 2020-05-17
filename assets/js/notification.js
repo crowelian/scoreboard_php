@@ -1,0 +1,1 @@
+// Simple notification system for scoreboard
