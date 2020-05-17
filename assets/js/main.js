@@ -1,19 +1,69 @@
-// Here needed code
+// JS code
 
 
-//Table init code (JQuery)
+// Table init code (JQuery)
+var SERVER_SIDE_FUNC = "server_processing.php";
+var table;
+
 $(document).ready(function () {
-    $('#scoreboardTable').DataTable({
-        "order": [[ 2, "desc" ]],
-        "paging":   false,
-        "info":     false,
-        "searching": false,
-        "responsive": true,
-        "aaSorting": [],
+    table = $('#scoreboardTable').DataTable({
+            "destroy": true,
+            "language": {
+                "zeroRecords": "No Players Found",
+                "processing": 'Loading...'
+              },
+            "order": [[2, "desc"]],
+            "paging": false,
+            "info": false,
+            "searching": false,
+            "responsive": true,
+            "aaSorting": [],
             columnDefs: [{
-            orderable: false,
-            targets: [0, 1]
-            }]
+                orderable: true,
+                targets: [0, 1]
+            }],
+            "processing": true,
+            "serverSide": true,
+            "ajax":SERVER_SIDE_FUNC
+            
     });
     $('.dataTables_length').addClass('bs-select');
+});
+
+
+$(document).ready(function () {
+    // Ajax for handling new player score sending
+    // submit form and get new records
+    $('#playerScore_form').on('submit', function (event) {
+        event.preventDefault();
+        console.log("SENDING!");
+
+        if ($('#inputPlayerName').val() != '' && $('#inputScore').val() != '') {
+            var form_data = $(this).serialize();
+
+            $.ajax({
+                url: "addScore.php",
+                method: "POST",
+                data: form_data,
+                success: function (data) {
+                    console.log("data: " + data);
+                    $('#playerScore_form')[0].reset();
+                    if ($.fn.load_unseen_notification) {
+                        load_unseen_notification();
+                    }
+                    console.log("SENT");
+
+                },
+                error: function(xhr, ajaxOptions, thrownError){
+                    //alert(xhr.status);
+                    console.log("%c AJAX ERROR: " + xhr.status +" - " + ajaxOptions + " !!! " + thrownError, 'background: #e3230e;');
+                }
+            });
+
+        }
+        else {
+            alert("Both Fields are Required");
+        }
+
+    });
 });

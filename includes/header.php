@@ -1,5 +1,6 @@
-<?php 
-include("include/session.php");
+<?php
+include("php_errors.php");
+include("session.php");
 ?>
 
 <head>
@@ -12,7 +13,6 @@ include("include/session.php");
 <script type="text/javascript" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.js"></script>
 <script src="assets/js/mobile-detect.js"></script>
-<script src="assets/js/notification.js"></script>
 
 <!-- Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:wght@300&display=swap" rel="stylesheet">
