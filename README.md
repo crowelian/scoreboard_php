@@ -1,7 +1,7 @@
 PHP Scoreboard
 ==============
 
-
+[Live Demo](https://softa.site/scoreboard_php "Demo")
 
 
 IDEA
