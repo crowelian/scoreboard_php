@@ -15,19 +15,23 @@ $(document).ready(function () {
             "order": [[2, "desc"]],
             "paging": false,
             "info": false,
+            "hideCount": true,
             "searching": false,
             "responsive": true,
             "aaSorting": [],
             columnDefs: [{
-                orderable: true,
-                targets: [0, 1]
+                orderable: false,
+                targets: []
             }],
             "processing": true,
             "serverSide": true,
-            "ajax":SERVER_SIDE_FUNC
+            "ajax":SERVER_SIDE_FUNC,
+            "columns": [ {"data" : "0"}, {"data" : "1"}, {"data" : "2"} ]
             
     });
+    
     $('.dataTables_length').addClass('bs-select');
+    
 });
 
 function reloadTable() {
@@ -80,4 +84,6 @@ $(document).ready(function () {
 
     
 });
+
+
 
