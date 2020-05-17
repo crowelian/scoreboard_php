@@ -1,5 +1,5 @@
 # database / sensitive info
-config/
+config/db.php
 
 #PHP error log
 error_log
