@@ -1,2 +1,8 @@
 # database / sensitive info
 config/
+
+#PHP error log
+error_log
+
+#Project related files but not important
+do_not_upload/
