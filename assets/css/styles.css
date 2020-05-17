@@ -16,13 +16,15 @@ body {
     padding: 40px 20px 40px 20px;
 }
 
-/* Notification */
-.dropdown-menu {
-    right: 0 !important;
+/* fixes for mobile */
+#scoreNotifications {
+    padding-bottom: 20px;
 }
-
-
-
+#dropdownMenuButton {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
 
 /* Fixed for Safari mobile browser */
 .row:before, .row:after {

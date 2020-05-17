@@ -15,7 +15,7 @@ include("includes/header.php");
                 <a href="#" class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <span class="badge badge-danger count" style="border-radius:10px;"></span><i class="fa fa-bell"></i>
                 </a>
-                <div class="dropdown-menu text-center" aria-labelledby="dropdownMenuButton" style="left: -256px;">
+                <div class="dropdown-menu text-center dropdown-menu-right" aria-labelledby="dropdownMenuButton">
                 <div class="dropdown-header">Latest players:</div> 
                     <!-- notifications here -->
                 </div>
