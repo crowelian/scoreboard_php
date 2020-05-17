@@ -36,5 +36,6 @@ Acknowledgments
 ---------------
 
 - [Theme base is bootswatch: Slate](https://bootswatch.com/ "Bootswatch")
+- [Table is Datatables](https://datatables.net/ "Data tables")
 
 
