@@ -5,7 +5,7 @@ include("session.php");
 
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-<title>Scoreboard</title>
+<title>Scoreboard service</title>
 
 <!-- JS -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>

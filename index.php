@@ -8,7 +8,7 @@ include("includes/header.php");
 
     <div class="row">
         <div class="col text-center">
-            <h1 id="main-title">Scoreboard</h1>
+            <h1 id="main-title">Scoreboard service</h1>
 
 
             <div id="scoreNotifications" class="dropdown float-right">
