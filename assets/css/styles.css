@@ -14,6 +14,24 @@ body {
 
 #main-title {
     padding: 40px 20px 40px 20px;
+    text-transform: uppercase;
+    background: -webkit-gradient(linear, left top, left bottom, from(#30CFD0), to(#330867));
+    background: linear-gradient(to bottom, #30CFD0 0%, #330867 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.s-span {
+    font-family: Roboto Slab,Times New Roman,serif;
+    font-weight: 700;
+    color: #eba210;
+    text-transform: uppercase;
+}
+
+/* Form */
+label {
+    padding-top: 15px;
+    padding-bottom: 5px;
 }
 
 /* fixes for mobile */
