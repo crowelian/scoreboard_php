@@ -1,8 +1,9 @@
 PHP Scoreboard
 ==============
-
+<!--
 ###### Does not work at the moment... the database was moved to another server...
 [Live Demo](https://softa.site/scoreboard_php "Demo")
+-->
 
 
 IDEA
